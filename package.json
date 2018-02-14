@@ -1,9 +1,12 @@
 {
   "name": "@tivac/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "My ESLint config",
   "main": ".eslintrc.js",
-  "keywords": ["eslint", "config"],
+  "keywords": [
+    "eslint",
+    "config"
+  ],
   "author": "Pat Cavit <npm@patcavit.com>",
   "license": "MIT",
   "scripts": {
