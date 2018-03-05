@@ -1,6 +1,6 @@
 {
   "name": "@tivac/eslint-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ESLint config",
   "main": "./eslint.js",
   "keywords": [
@@ -27,7 +27,10 @@
       "node": true
     },
     "rules": {
-      "quote-props": [ "error", "consistent-as-needed" ]
+      "quote-props": [
+        "error",
+        "consistent-as-needed"
+      ]
     }
   }
 }
