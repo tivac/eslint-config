@@ -1,16 +1,33 @@
 {
   "name": "@tivac/eslint-config",
   "version": "1.0.0",
-  "description": "My ESLint config",
-  "main": ".eslintrc.js",
+  "description": "ESLint config",
+  "main": "./eslint.js",
   "keywords": [
     "eslint",
-    "config"
+    "config",
+    "tivac"
   ],
   "author": "Pat Cavit <npm@patcavit.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint .",
+    "prerelease": "npm run lint",
     "release": "npm version -m \"v%s\"",
     "postversion": "npm publish --access=public"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./eslint.js"
+    ],
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "quote-props": [ "error", "consistent-as-needed" ]
+    }
   }
 }
