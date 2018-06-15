@@ -48,14 +48,14 @@ module.exports = {
         "indent"                    : "off",
         "init-declarations"         : "off",
         "jsx-quotes"                : "off",
-        "key-spacing" : [ "warn", {
-            "mode"        : "minimum",
-            "beforeColon" : true,
-            "afterColon"  : true,
-            "align"       : {
-                "beforeColon" : true,
-                "afterColon"  : true,
-                "on"          : "colon"
+        "key-spacing"               : [ "warn", {
+            mode        : "minimum",
+            beforeColon : true,
+            afterColon  : true,
+            align       : {
+                beforeColon : true,
+                afterColon  : true,
+                on          : "colon"
             }
         }],
         "keyword-spacing" : [ "warn", {
@@ -257,20 +257,20 @@ module.exports = {
         "prefer-arrow-callback"        : "error",
         "prefer-const"                 : "warn",
         "prefer-destructuring"         : [ "warn", {
-            "VariableDeclarator" : {
-                "array" : true,
-                "object" : true
+            VariableDeclarator : {
+                array  : true,
+                object : true
             },
-            "AssignmentExpression" : {
-                "array" : false,
-                "object" : false
+            AssignmentExpression : {
+                array  : false,
+                object : false
             }
         }],
-        "prefer-rest-params"           : "warn",
-        "prefer-spread"                : "warn",
-        "prefer-template"              : "warn",
-        "quote-props"                  : [ "warn", "as-needed" ],
-        "quotes"                       : [ "error", "double", {
+        "prefer-rest-params" : "warn",
+        "prefer-spread"      : "warn",
+        "prefer-template"    : "warn",
+        "quote-props"        : [ "warn", "as-needed" ],
+        "quotes"             : [ "error", "double", {
             avoidEscape           : true,
             allowTemplateLiterals : true
         }],
