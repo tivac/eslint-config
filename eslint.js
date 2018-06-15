@@ -48,11 +48,6 @@ module.exports = {
         "indent"                    : "off",
         "init-declarations"         : "off",
         "jsx-quotes"                : "off",
-        "key-spacing"               : [ "warn", {
-            beforeColon : true,
-            afterColon  : true,
-            align       : "colon"
-        }],
         "key-spacing" : [ "warn", {
             "mode"        : "minimum",
             "beforeColon" : true,
