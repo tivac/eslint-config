@@ -53,6 +53,16 @@ module.exports = {
             afterColon  : true,
             align       : "colon"
         }],
+        "key-spacing" : [ "warn", {
+            "mode"        : "minimum",
+            "beforeColon" : true,
+            "afterColon"  : true,
+            "align"       : {
+                "beforeColon" : true,
+                "afterColon"  : true,
+                "on"          : "colon"
+            }
+        }],
         "keyword-spacing" : [ "warn", {
             before    : true,
             after     : false,
