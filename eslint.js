@@ -20,7 +20,13 @@ module.exports = {
         "brace-style"               : "error",
         "callback-return"           : [ "error", [ "callback", "cb", "next", "done" ]],
         "camelcase"                 : [ "warn", { properties : "never" }],
-        "comma-dangle"              : [ "warn", "only-multiline" ],
+        "comma-dangle"              : [ "warn", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "never",
+            "exports": "never",
+            "functions": "ignore"
+        }]
         "comma-spacing"             : "warn",
         "comma-style"               : [ "warn", "last" ],
         "complexity"                : [ "warn", 15 ],
@@ -87,6 +93,9 @@ module.exports = {
                     after : true
                 },
                 let : {
+                    after : true
+                },
+                var : {
                     after : true
                 }
             }
