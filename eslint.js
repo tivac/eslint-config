@@ -26,7 +26,7 @@ module.exports = {
             "imports": "never",
             "exports": "never",
             "functions": "ignore"
-        }]
+        }],
         "comma-spacing"             : "warn",
         "comma-style"               : [ "warn", "last" ],
         "complexity"                : [ "warn", 15 ],
