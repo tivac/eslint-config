@@ -8,24 +8,24 @@ module.exports = {
             {
                 arraysInArrays  : false,
                 singleValue     : true,
-                objectsInArrays : false
-            }
+                objectsInArrays : false,
+            },
         ],
-        "array-callback-return"     : "warn",
-        "arrow-body-style"          : [ "warn", "as-needed" ],
-        "arrow-parens"              : [ "error", "always" ],
-        "arrow-spacing"             : "error",
-        "block-scoped-var"          : "warn",
-        "block-spacing"             : [ "warn", "always" ],
-        "brace-style"               : "error",
-        "callback-return"           : [ "error", [ "callback", "cb", "next", "done" ]],
-        "camelcase"                 : [ "warn", { properties : "never" }],
-        "comma-dangle"              : [ "warn", {
-            "arrays": "always-multiline",
-            "objects": "always-multiline",
-            "imports": "never",
-            "exports": "never",
-            "functions": "ignore"
+        "array-callback-return" : "warn",
+        "arrow-body-style"      : [ "warn", "as-needed" ],
+        "arrow-parens"          : [ "error", "always" ],
+        "arrow-spacing"         : "error",
+        "block-scoped-var"      : "warn",
+        "block-spacing"         : [ "warn", "always" ],
+        "brace-style"           : "error",
+        "callback-return"       : [ "error", [ "callback", "cb", "next", "done" ]],
+        "camelcase"             : [ "warn", { properties : "never" }],
+        "comma-dangle"          : [ "warn", {
+            arrays    : "always-multiline",
+            objects   : "always-multiline",
+            imports   : "never",
+            exports   : "never",
+            functions : "ignore",
         }],
         "comma-spacing"             : "warn",
         "comma-style"               : [ "warn", "last" ],
@@ -54,51 +54,51 @@ module.exports = {
         "indent"                    : "off",
         "init-declarations"         : "off",
         "jsx-quotes"                : "off",
-        "key-spacing" : [ "warn", {
-            "mode"        : "minimum",
-            "beforeColon" : true,
-            "afterColon"  : true,
-            "align"       : {
-                "beforeColon" : true,
-                "afterColon"  : true,
-                "on"          : "colon"
-            }
+        "key-spacing"               : [ "warn", {
+            mode        : "minimum",
+            beforeColon : true,
+            afterColon  : true,
+            align       : {
+                beforeColon : true,
+                afterColon  : true,
+                on          : "colon",
+            },
         }],
         "keyword-spacing" : [ "warn", {
             before    : true,
             after     : false,
             overrides : {
                 return : {
-                    after : true
+                    after : true,
                 },
                 else : {
-                    after : true
+                    after : true,
                 },
                 try : {
-                    after : true
+                    after : true,
                 },
                 case : {
-                    after : true
+                    after : true,
                 },
                 from : {
-                    after : true
+                    after : true,
                 },
                 import : {
-                    after : true
+                    after : true,
                 },
                 export : {
-                    after : true
+                    after : true,
                 },
                 const : {
-                    after : true
+                    after : true,
                 },
                 let : {
-                    after : true
+                    after : true,
                 },
                 var : {
-                    after : true
-                }
-            }
+                    after : true,
+                },
+            },
         }],
         "linebreak-style"      : "off",
         "lines-around-comment" : [ "off", {
@@ -106,7 +106,7 @@ module.exports = {
             beforeLineComment  : true,
             allowBlockStart    : true,
             allowObjectStart   : true,
-            allowArrayStart    : true
+            allowArrayStart    : true,
         }],
         "max-nested-callbacks"     : "off",
         "max-params"               : [ "warn", 4 ],
@@ -181,8 +181,8 @@ module.exports = {
                 ObjectExpression     : true,
                 Property             : true,
                 SwitchCase           : true,
-                VariableDeclarator   : true
-            }
+                VariableDeclarator   : true,
+            },
         }],
         "no-mixed-spaces-and-tabs"     : "error",
         "no-multi-str"                 : "error",
@@ -236,7 +236,7 @@ module.exports = {
         "no-unused-vars"               : [ "warn", {
             args               : "after-used",
             ignoreRestSiblings : true,
-            caughtErrors       : "none"
+            caughtErrors       : "none",
         }],
         "no-useless-call"               : "warn",
         "no-useless-concat"             : "warn",
@@ -250,14 +250,14 @@ module.exports = {
             "always",
             {
                 objectsInObjects : true,
-                arraysInObjects  : true
-            }
+                arraysInObjects  : true,
+            },
         ],
         "object-shorthand" : "warn",
         "one-var"          : [ "error", {
             var   : "always",
             let   : "never",
-            const : "never"
+            const : "never",
         }],
         "one-var-declaration-per-line" : [ "warn", "initializations" ],
         "operator-assignment"          : "off",
@@ -266,22 +266,22 @@ module.exports = {
         "prefer-arrow-callback"        : "error",
         "prefer-const"                 : "warn",
         "prefer-destructuring"         : [ "warn", {
-            "VariableDeclarator" : {
-                "array" : true,
-                "object" : true
+            VariableDeclarator : {
+                array  : true,
+                object : true,
             },
-            "AssignmentExpression" : {
-                "array" : false,
-                "object" : false
-            }
+            AssignmentExpression : {
+                array  : false,
+                object : false,
+            },
         }],
-        "prefer-rest-params"           : "warn",
-        "prefer-spread"                : "warn",
-        "prefer-template"              : "warn",
-        "quote-props"                  : [ "warn", "as-needed" ],
-        "quotes"                       : [ "error", "double", {
+        "prefer-rest-params" : "warn",
+        "prefer-spread"      : "warn",
+        "prefer-template"    : "warn",
+        "quote-props"        : [ "warn", "as-needed" ],
+        "quotes"             : [ "error", "double", {
             avoidEscape           : true,
-            allowTemplateLiterals : true
+            allowTemplateLiterals : true,
         }],
         "radix"         : "warn",
         "require-jsdoc" : "off",
@@ -289,14 +289,14 @@ module.exports = {
         "semi"          : "error",
         "semi-spacing"  : [ "warn", {
             before : false,
-            after  : true
+            after  : true,
         }],
         "sort-vars"                   : "off",
         "space-before-blocks"         : [ "warn", "always" ],
         "space-before-function-paren" : [ "warn", {
             anonymous  : "never",
             named      : "never",
-            asyncArrow : "always"
+            asyncArrow : "always",
         }],
         "space-in-parens"        : [ "warn", "never" ],
         "space-infix-ops"        : "error",
@@ -314,5 +314,5 @@ module.exports = {
         "yield-star-spacing"     : "error",
         "yoda"                   : "warn",
         "no-use-before-define"   : "warn",
-    }
+    },
 };
