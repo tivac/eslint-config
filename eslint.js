@@ -253,6 +253,24 @@ module.exports = {
                 arraysInObjects  : true,
             },
         ],
+        "object-curly-newline"          : [ "warn", {
+            ObjectExpression : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ObjectPattern : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ImportDeclaration : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ExportDeclaration : {
+                consistent : true,
+                minProperties : 6,
+            }
+        } ],
         "object-shorthand" : "warn",
         "one-var"          : [ "error", {
             var   : "always",
