@@ -21,10 +21,10 @@ module.exports = {
         "callback-return"       : [ "error", [ "callback", "cb", "next", "done" ]],
         "camelcase"             : [ "warn", { properties : "never" }],
         "comma-dangle"          : [ "warn", {
-            arrays    : "always-multiline",
-            objects   : "always-multiline",
-            imports   : "never",
-            exports   : "never",
+            arrays    : "only-multiline",
+            objects   : "only-multiline",
+            imports   : "only-multiline",
+            exports   : "always-multiline",
             functions : "ignore",
         }],
         "comma-spacing"             : "warn",
@@ -100,6 +100,7 @@ module.exports = {
                 },
             },
         }],
+        "line-comment-position": [ "warn", { position : "above" }],
         "linebreak-style"      : "off",
         "lines-around-comment" : [ "off", {
             beforeBlockComment : true,
@@ -288,6 +289,8 @@ module.exports = {
                 array  : true,
                 object : true,
             },
+            
+            // Destructuring in assignments looks wonky, don't warn about it
             AssignmentExpression : {
                 array  : false,
                 object : false,
