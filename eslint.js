@@ -100,9 +100,9 @@ module.exports = {
                 },
             },
         }],
-        "line-comment-position": [ "warn", { position : "above" }],
-        "linebreak-style"      : "off",
-        "lines-around-comment" : [ "off", {
+        "line-comment-position" : [ "warn", { position : "above" }],
+        "linebreak-style"       : "off",
+        "lines-around-comment"  : [ "off", {
             beforeBlockComment : true,
             beforeLineComment  : true,
             allowBlockStart    : true,
@@ -254,24 +254,24 @@ module.exports = {
                 arraysInObjects  : true,
             },
         ],
-        "object-curly-newline"          : [ "warn", {
+        "object-curly-newline" : [ "warn", {
             ObjectExpression : {
-                consistent : true,
+                consistent    : true,
                 minProperties : 6,
             },
             ObjectPattern : {
-                consistent : true,
+                consistent    : true,
                 minProperties : 6,
             },
             ImportDeclaration : {
-                consistent : true,
+                consistent    : true,
                 minProperties : 6,
             },
             ExportDeclaration : {
-                consistent : true,
+                consistent    : true,
                 minProperties : 6,
             }
-        } ],
+        }],
         "object-shorthand" : "warn",
         "one-var"          : [ "error", {
             var   : "always",
