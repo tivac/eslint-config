@@ -8,19 +8,25 @@ module.exports = {
             {
                 arraysInArrays  : false,
                 singleValue     : true,
-                objectsInArrays : false
-            }
+                objectsInArrays : false,
+            },
         ],
-        "array-callback-return"     : "warn",
-        "arrow-body-style"          : [ "warn", "as-needed" ],
-        "arrow-parens"              : [ "error", "always" ],
-        "arrow-spacing"             : "error",
-        "block-scoped-var"          : "warn",
-        "block-spacing"             : [ "warn", "always" ],
-        "brace-style"               : "error",
-        "callback-return"           : [ "error", [ "callback", "cb", "next", "done" ]],
-        "camelcase"                 : [ "warn", { properties : "never" }],
-        "comma-dangle"              : [ "warn", "only-multiline" ],
+        "array-callback-return" : "warn",
+        "arrow-body-style"      : [ "warn", "as-needed" ],
+        "arrow-parens"          : [ "error", "always" ],
+        "arrow-spacing"         : "error",
+        "block-scoped-var"      : "warn",
+        "block-spacing"         : [ "warn", "always" ],
+        "brace-style"           : "error",
+        "callback-return"       : [ "error", [ "callback", "cb", "next", "done" ]],
+        "camelcase"             : [ "warn", { properties : "never" }],
+        "comma-dangle"          : [ "warn", {
+            arrays    : "only-multiline",
+            objects   : "only-multiline",
+            imports   : "only-multiline",
+            exports   : "always-multiline",
+            functions : "ignore",
+        }],
         "comma-spacing"             : "warn",
         "comma-style"               : [ "warn", "last" ],
         "complexity"                : [ "warn", 15 ],
@@ -55,49 +61,53 @@ module.exports = {
             align       : {
                 beforeColon : true,
                 afterColon  : true,
-                on          : "colon"
-            }
+                on          : "colon",
+            },
         }],
         "keyword-spacing" : [ "warn", {
             before    : true,
             after     : false,
             overrides : {
                 return : {
-                    after : true
+                    after : true,
                 },
                 else : {
-                    after : true
+                    after : true,
                 },
                 try : {
-                    after : true
+                    after : true,
                 },
                 case : {
-                    after : true
+                    after : true,
                 },
                 from : {
-                    after : true
+                    after : true,
                 },
                 import : {
-                    after : true
+                    after : true,
                 },
                 export : {
-                    after : true
+                    after : true,
                 },
                 const : {
-                    after : true
+                    after : true,
                 },
                 let : {
-                    after : true
-                }
-            }
+                    after : true,
+                },
+                var : {
+                    after : true,
+                },
+            },
         }],
+        "line-comment-position": [ "warn", { position : "above" }],
         "linebreak-style"      : "off",
         "lines-around-comment" : [ "off", {
             beforeBlockComment : true,
             beforeLineComment  : true,
             allowBlockStart    : true,
             allowObjectStart   : true,
-            allowArrayStart    : true
+            allowArrayStart    : true,
         }],
         "max-nested-callbacks"     : "off",
         "max-params"               : [ "warn", 4 ],
@@ -172,8 +182,8 @@ module.exports = {
                 ObjectExpression     : true,
                 Property             : true,
                 SwitchCase           : true,
-                VariableDeclarator   : true
-            }
+                VariableDeclarator   : true,
+            },
         }],
         "no-mixed-spaces-and-tabs"     : "error",
         "no-multi-str"                 : "error",
@@ -227,7 +237,7 @@ module.exports = {
         "no-unused-vars"               : [ "warn", {
             args               : "after-used",
             ignoreRestSiblings : true,
-            caughtErrors       : "none"
+            caughtErrors       : "none",
         }],
         "no-useless-call"               : "warn",
         "no-useless-concat"             : "warn",
@@ -241,14 +251,32 @@ module.exports = {
             "always",
             {
                 objectsInObjects : true,
-                arraysInObjects  : true
-            }
+                arraysInObjects  : true,
+            },
         ],
+        "object-curly-newline"          : [ "warn", {
+            ObjectExpression : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ObjectPattern : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ImportDeclaration : {
+                consistent : true,
+                minProperties : 6,
+            },
+            ExportDeclaration : {
+                consistent : true,
+                minProperties : 6,
+            }
+        } ],
         "object-shorthand" : "warn",
         "one-var"          : [ "error", {
             var   : "always",
             let   : "never",
-            const : "never"
+            const : "never",
         }],
         "one-var-declaration-per-line" : [ "warn", "initializations" ],
         "operator-assignment"          : "off",
@@ -259,12 +287,14 @@ module.exports = {
         "prefer-destructuring"         : [ "warn", {
             VariableDeclarator : {
                 array  : true,
-                object : true
+                object : true,
             },
+
+            // Destructuring in assignments looks wonky, don't warn about it
             AssignmentExpression : {
                 array  : false,
-                object : false
-            }
+                object : false,
+            },
         }],
         "prefer-rest-params" : "warn",
         "prefer-spread"      : "warn",
@@ -272,7 +302,7 @@ module.exports = {
         "quote-props"        : [ "warn", "as-needed" ],
         "quotes"             : [ "error", "double", {
             avoidEscape           : true,
-            allowTemplateLiterals : true
+            allowTemplateLiterals : true,
         }],
         "radix"         : "warn",
         "require-jsdoc" : "off",
@@ -280,14 +310,14 @@ module.exports = {
         "semi"          : "error",
         "semi-spacing"  : [ "warn", {
             before : false,
-            after  : true
+            after  : true,
         }],
         "sort-vars"                   : "off",
         "space-before-blocks"         : [ "warn", "always" ],
         "space-before-function-paren" : [ "warn", {
             anonymous  : "never",
             named      : "never",
-            asyncArrow : "always"
+            asyncArrow : "always",
         }],
         "space-in-parens"        : [ "warn", "never" ],
         "space-infix-ops"        : "error",
@@ -305,5 +335,5 @@ module.exports = {
         "yield-star-spacing"     : "error",
         "yoda"                   : "warn",
         "no-use-before-define"   : "warn",
-    }
+    },
 };
