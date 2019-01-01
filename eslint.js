@@ -68,36 +68,17 @@ module.exports = {
             before    : true,
             after     : false,
             overrides : {
-                return : {
-                    after : true,
-                },
-                else : {
-                    after : true,
-                },
-                try : {
-                    after : true,
-                },
-                case : {
-                    after : true,
-                },
-                from : {
-                    after : true,
-                },
-                import : {
-                    after : true,
-                },
-                export : {
-                    after : true,
-                },
-                const : {
-                    after : true,
-                },
-                let : {
-                    after : true,
-                },
-                var : {
-                    after : true,
-                },
+                case    : { after : true },
+                const   : { after : true },
+                default : { after : true },
+                else    : { after : true },
+                export  : { after : true },
+                from    : { after : true },
+                import  : { after : true },
+                let     : { after : true },
+                return  : { after : true },
+                try     : { after : true },
+                var     : { after : true },
             },
         }],
         "line-comment-position" : [ "warn", { position : "above" }],
