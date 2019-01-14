@@ -71,6 +71,7 @@ module.exports = {
                 case    : { after : true },
                 const   : { after : true },
                 default : { after : true },
+                do      : { after : true },
                 else    : { after : true },
                 export  : { after : true },
                 from    : { after : true },
