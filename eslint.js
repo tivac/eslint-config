@@ -20,7 +20,7 @@ module.exports = {
         "brace-style"           : "error",
         "callback-return"       : [ "error", [ "callback", "cb", "next", "done" ]],
         "camelcase"             : [ "warn", { properties : "never" }],
-        "comma-dangle" : [ "warn", {
+        "comma-dangle"          : [ "warn", {
             arrays    : "always-multiline",
             exports   : "always-multiline",
             functions : "ignore",
@@ -252,7 +252,7 @@ module.exports = {
             ExportDeclaration : {
                 consistent    : true,
                 minProperties : 6,
-            }
+            },
         }],
         "object-shorthand" : "warn",
         "one-var"          : [ "error", {
