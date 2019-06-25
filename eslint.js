@@ -20,12 +20,12 @@ module.exports = {
         "brace-style"           : "error",
         "callback-return"       : [ "error", [ "callback", "cb", "next", "done" ]],
         "camelcase"             : [ "warn", { properties : "never" }],
-        "comma-dangle"          : [ "warn", {
-            arrays    : "only-multiline",
-            objects   : "only-multiline",
-            imports   : "only-multiline",
+        "comma-dangle" : [ "warn", {
+            arrays    : "always-multiline",
             exports   : "always-multiline",
             functions : "ignore",
+            imports   : "only-multiline",
+            objects   : "always-multiline",
         }],
         "comma-spacing"             : "warn",
         "comma-style"               : [ "warn", "last" ],
